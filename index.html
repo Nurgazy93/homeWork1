@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. Задание -->
+    <div id="one">
+        <p><strong>1. Задание</strong></p>
+        <p> Вычисление среднего значения:</p>
+        <strong>Первое число:</strong> <input type="number" id="input1"> <br><br>
+        <strong>Второе число:</strong> <input type="number" id="input2">
+        <button id="button1"> Вычислить</button>
+        <p>Результат: <strong id="res1"> </strong></p>
+        <hr>
+    </div>
+    <!-- 2. Задание-->
+    <div id="two">
+        <p><strong>2. Задание</strong></p>
+        <p> Вычисление остатка при делении</p>
+        <strong>Первое число:</strong> <input type="number" id="input11"> <br><br>
+        <strong>Второе число:</strong> <input type="number" id="input22">
+        <button id="button2"> Вычислить</button>
+        <p> Результат: <strong id="res2"> <br>
+                <hr>
+    </div>
+    <!-- 3. Задание -->
+    <div id="three">
+        <p><strong>3. Задание</strong></p>
+        <p> Вывод правильного времени: </p>
+        <label for="inputTime">Введите время:</label>
+        <input type="text" id="inputTime" placeholder="Например: 9:45 pm" required />
+        <button type="button" onclick="convertTime()">Вывести</button><br>
+        <p id="res3"> </p>
+    </div>
+    <hr>
+
+    <!-- 4. Задание -->
+    <div id="four">
+        <p><strong>4. Задание</strong></p>
+        <p> Вывод наибольшего из 2-х чисел: </p>
+        <input type="text" id="numbers" placeholder="Например: 12-124" />
+        <button type="button" onclick="twoNumber()"> Выполнить</button>
+        <p>Результат: <strong id="res4"></strong></p>
+    </div>
+    <hr>
+
+    <!-- 5. Задание -->
+    <div id="five">
+        <p><strong>5. Задание</strong></p>
+        <p> Решение уравнения: ax + b = 0</p>
+        <strong>Введите значение "а":</strong> <input type="text" id="a" /><br><br>
+        <strong>Введите значение "b":</strong> <input type="text" id="b" /><br><br>
+        <button type="button" onclick="result5()"> Выполнить </button>
+        <p>Результат: <strong id="res5"></strong></p>
+        <hr>
+    </div>
+
+    <!-- 6. Задание -->
+    <div id="six">
+        <p><strong>6. Задание</strong></p>
+        <p> Расчет сдачи:</p>
+        <strong>Введите цену: </strong><input type="text" id="cena" placeholder="Например: 5.15" /><br><br>
+        <strong>Введите оплату: </strong><input type="text" id="oplata" placeholder="Например: 7.15" /><br><br>
+        <button type="button" onclick="change()"> Расчитать </button>
+        <p>Сдача: <strong id="res6"></strong></p>
+        <hr>
+    </div>
+
+    <!-- 7. Задание -->
+    <div id="seven">
+        <p><strong>7. Задание</strong></p>
+        <p> Вывод наибольшего из 3-х чисел: </p>
+        <input type="text" id="numbers3" placeholder="Например: 12-55-124" />
+        <button type="button" onclick="Number3Max()"> Выполнить</button>
+        <p>Результат: <strong id="res7"></strong></p>
+    </div>
+    <hr>
+
+    <!-- 8. Задание -->
+    <div id="eight">
+        <p><strong>8. Задание</strong></p>
+        <p> Вывод наименьшего из 3-х чисел: </p>
+        <input type="text" id="numbersMin" placeholder="Например: 12-55-124" />
+        <button type="button" onclick="NumberMin()"> Выполнить</button>
+        <p>Результат: <strong id="res8"></strong></p>
+    </div>
+    <hr>
+
+    <!-- 9. Задание -->
+    <div id="nine">
+        <p><strong>9. Задание</strong></p>
+        <p> Проверка високосного года: </p>
+        <label for="yearInput"> Введите год: </label>
+        <input type="num" id="yearInput" min="0" step="1" placeholder="Введите год">
+        <button onclick="checkLeapYear()"> Проверить </button>
+        <p id="res9"></p>
+    </div>
+    <hr>
+
+    <!-- 10. Задание-->
+    <div id="ten">
+        <p><strong>10. Задание</strong></p>
+        <p> Cколько шариков мороженного можно купить: </p>
+        <Strong>Введите количество шариков: </Strong><input type="text" id="inputIceCream" />
+        <button type="button" onclick="iceCream()"> Проверить </button>
+        <p> Результат: <strong id="res10"></strong></p>
+    </div>
+    <hr>
+
+    <!-- 11. Задание -->
+    <div id="eleven">
+        <p><strong>11. Задание</strong></p>
+        <p> Подсчет времени жарки котлет: </p>
+        <p> Макс. вместимость котлет в сковородке: <input type="text" id="inputKotletMesto" /></p>
+        <p> Минут для обжарки одной стороны котлеты: <input type="text" id="inputKotletTime" /></p>
+        <p> Количество всех котлет: <input type="text" id="inputKotletAll" /></p>
+        <button type="button" onclick="kotlet()"> Расчитать</button>
+        <p> Необходимо минут: <strong id="res11"></strong></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
